@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+    background: black;
+}
+.menuPrincipal{
+    display: block;
+    float: right;
+    margin: 25px;
+}
+.logoCabecera .logo{
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    margin-left: 100px;
+}
+.logoCabecera{
+    transition: 500ms ease-out;
+    position: fixed;
+    width: 100%;
+}
+.logoCabecera:hover{
+    background: rgb(0, 0, 0, .9);
+    box-shadow: 0 0 15px rgb(251, 176, 0);
+}
+.menuPrincipal ul {
+    list-style:none;
+    background: none;
+    margin-right: 50px;
+    display: block;
+}
+.menuPrincipal ul a {
+    color:rgb(255, 255, 255);
+    background: none;
+    text-decoration:none;
+    font-weight:400;
+    font-size:20px;
+    padding:10px;
+    font-family: "Montserrat";
+	text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing:1px;
+    float: right;
+    margin: 15px;
+    border: none;
+    transition: 0.8s;
+    width: 200px;
+}
+
+
+.menuPrincipal ul li {
+    position:block;
+    float:right;
+}
+
+.menuPrincipal ul li a:hover {
+    color:#e7ac3f;
+    font-size: 21px;
+    margin-top: 5px;
+    filter: saturate(2);
+    cursor: url("img/cursor.png"), auto;
+}
+
+.paginaPrincipal {
+    margin-left: -10px;
+    margin-top: -10px;
+    width:100.96%;
+    height: 900px;
+    background-image: url("img/fondo.png");
+    background-color: transparent;
+    background-size: cover;
+}
