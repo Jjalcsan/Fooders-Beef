@@ -20,8 +20,8 @@ body{
     width: 100%;
 }
 .logoCabecera:hover{
-    background: rgb(0, 0, 0, .9);
-    box-shadow: 0 0 15px rgb(251, 176, 0);
+    background: rgb(0, 0, 0, .8);
+    box-shadow: 0 0 100px 65px rgb(0, 0, 0, .8);
 }
 .menuPrincipal ul {
     list-style:none;
@@ -43,7 +43,7 @@ body{
     float: right;
     margin: 15px;
     border: none;
-    transition: 0.8s;
+    transition: 0.3s;
     width: 200px;
 }
 
@@ -55,8 +55,8 @@ body{
 
 .menuPrincipal ul li a:hover {
     color:#e7ac3f;
-    font-size: 21px;
-    margin-top: 5px;
+    font-size: 20px;
+    margin-top: 10px;
     filter: saturate(2);
     cursor: url("img/cursor.png"), auto;
 }
