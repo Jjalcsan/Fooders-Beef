@@ -1,0 +1,67 @@
+#contact-us{
+    background-color: azure;
+    height: 500px;
+}
+
+#send-message{
+    background-color: aqua;
+}
+
+#address-email-phone{
+    background-color: rgb(0,0,0,.9);
+    color: white;
+    height: 30%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#footer-like{
+    background-color: rgb(0,0,0,.9);
+    color: white;
+    height: 40%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#schedule-table{
+    color: white;
+}
+
+#footer-like div{
+	flex: 1;
+	margin: 2px;
+	padding: 10px;
+}
+
+#posts div{
+    padding: 1px
+}
+
+.div-de-post{
+    height: 30%;
+}
+
+.div-de-foto{
+    width: 30%;
+}
+
+.div-de-foto img{
+    border-radius: 30%;
+}
+
+.div-de-contenido{
+    width: 65%;
+    float: right;
+}
+
+.enlaces{
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.enlaces:hover{
+    border-color: #e7ac3f;
+    transition:all .2s ease-in-out;
+}
