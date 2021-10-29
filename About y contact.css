@@ -13,6 +13,27 @@
     height: 30%;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+}
+
+#address-email-phone div{
+    width: 33%;
+}
+
+#adress,#phone,#email{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.div-imagen{
+    width: 30%;
+    text-align: right;
+    align-items: center;
+}
+
+.div-info{
+    width: 70%;
 }
 
 #footer-like{
@@ -34,24 +55,26 @@
 }
 
 #posts div{
-    padding: 1px
+    padding: 1px;
 }
 
 .div-de-post{
-    height: 30%;
-}
-
-.div-de-foto{
-    width: 30%;
+    height: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .div-de-foto img{
     border-radius: 30%;
 }
 
+.div-de-foto{
+    width: auto;
+    height: 100%;
+}
+
 .div-de-contenido{
-    width: 65%;
-    float: right;
+    max-height: fit-content;
 }
 
 .enlaces{
@@ -65,3 +88,13 @@
     border-color: #e7ac3f;
     transition:all .2s ease-in-out;
 }
+
+.day-td{
+    width: 50%;
+}
+
+.schedule-td{
+    text-align: right;
+    padding-top: 9px;
+}
+
