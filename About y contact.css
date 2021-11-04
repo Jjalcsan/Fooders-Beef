@@ -1,11 +1,32 @@
+body{
+    margin: 0;
+}
+
+/*CSS de imagen de contacto*/
+
 #contact-us{
     background-color: azure;
     height: 500px;
 }
 
+
+/*CSS de envio de mensajes*/
+
 #send-message{
+    padding-top: 30px;
     background-color: aqua;
+    text-align: center;
 }
+
+#enviar-mensaje{
+    margin-bottom: 10px;
+}
+
+.input{
+    border-radius: 15px;
+    border-style: none;
+}
+/*CSS de email-phone-address*/
 
 #address-email-phone{
     background-color: rgb(0,0,0,.9);
@@ -36,6 +57,14 @@
     width: 70%;
 }
 
+.imagen{
+    margin-right: 20px;
+}
+
+/*CSS de location*/
+
+/*CSS de parte de abajo*/
+
 #footer-like{
     background-color: rgb(0,0,0,.9);
     color: white;
@@ -44,14 +73,14 @@
     flex-flow: row wrap;
 }
 
-#schedule-table{
-    color: white;
-}
-
 #footer-like div{
 	flex: 1;
 	margin: 2px;
 	padding: 10px;
+}
+
+#schedule-table{
+    color: white;
 }
 
 #posts div{
@@ -97,4 +126,18 @@
     text-align: right;
     padding-top: 9px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
