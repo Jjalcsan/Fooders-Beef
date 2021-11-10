@@ -5,31 +5,39 @@
     <title>Fooders' Beef</title>
     <link rel="styleSheet" type="text/css" href="style.css">
 </head>
-<body> 
-    <div class="paginaPrincipal">
+<body scrolling="no">
+    
+    <div id="principal">
+    <div class="paginaPrincipal" id="main">
         <div class="logoCabecera">
-            <img src="img/logoBlanco.png" class="logo"/>
+            <img src="img/logoBlanco.png" class="logo" />
             <div class="menuPrincipal">
                 <ul>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Reservations</a></li>
-                    <li><a href="#">Main Page</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#carta">Menu</a></li>
+                    <li><a href="#reservar">Reservations</a></li>
+                    <li><a href="#main">Main Page</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="formularioReserva">
-        <br><br><br><br><br><br><b<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>r><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="formularioReserva" id ="reservar">
+        <iframe src="formulario.html"  id="frameFormulario" scrolling="no"></iframe>
     </div>
-    <div class="carta"></div>
-    <div class="AboutUs"></div>
-    <div class="location"></div>
+    <div class="carta" id ="carta">
+        <br>
+        <iframe src="carta.html" id="frameCarta" frameborder="no" scrolling="no"  ></iframe>
+    </div>
+    <div class="contact-us">
+        <iframe src="About y contact.html" id="frameContact" frameborder="no" scrolling="no"></iframe>
+    </div>>
     <div class="footer">
         <img src="img/twitter.png" class="twitter"/>
         <img src="img/instagram.png" class="instagram"/>
         <p>Copyright © 2021 Fooders' Beef </p>
     </div>
+</div>
 </body>
+
 </html>

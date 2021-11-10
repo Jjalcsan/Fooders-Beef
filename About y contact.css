@@ -3,6 +3,7 @@
 body{
     margin: 0;
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 /*CSS de imagen de contacto*/
@@ -24,14 +25,31 @@ body{
 #contenido-contacto{
     position: absolute;
     top: 33%;
-    left: 33%;
+    left: 39%;
+}
+
+#boton-mostrar{
+    transition-duration: 2s;
+    border-radius: 15px;
+    width: 20%;
+    height: 7%;
+    border-style: solid;
+    background-color: rgb(0,0,0,.9);
+    color: white;
+    border-color: rgb(0,0,0,.2);
 }
 
 /*CSS de envio de mensajes*/
 
 #send-message{
+    transition: 2ms;
     padding-top: 30px;
     text-align: center;
+    background-color: white;
+}
+
+.oculto{
+    display: none;
 }
 
 #enviar-mensaje{
@@ -43,7 +61,7 @@ body{
     border-style: solid;
     height: 30px;
     padding-left: 10px;
-    border-color: rgb(0,0,0,.2);
+    border-color: rgb(0,0,0);
 }
 
 .input-textarea{
@@ -51,7 +69,8 @@ body{
     border-style: solid;
     padding-left: 10px;
     padding-top: 10px;
-    border-color: rgb(0,0,0,.2);
+    border-width: 2px;
+    border-color: rgb(0,0,0);
 }
 
 .input-button{
@@ -62,7 +81,7 @@ body{
     margin-top: 3%;
     background-color: rgb(0,0,0,.9);
     color: white;
-    border-color: rgb(0,0,0,.2);
+    border-color: rgb(0,0,0);
 }
 
 .barra{
@@ -75,6 +94,7 @@ body{
     background-color: rgb(0,0,0,.9);
     color: white;
     height: 30%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
