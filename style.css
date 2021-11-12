@@ -3,6 +3,12 @@
     html{
         scroll-behavior: smooth;
     }
+    
+    iframe {
+    max-width: 100%;
+    height: auto;
+    }
+
     body{
         margin: 0px;
         padding: 0px;
