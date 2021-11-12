@@ -4,13 +4,18 @@
     <meta charset=”UTF-8″ />
     <title>Fooders' Beef</title>
     <link rel="styleSheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width">
 </head>
-<body scrolling="no">
-    
-    <div id="principal">
+<body class="hiddenFlow">
+    <div id="loaderContenedor">
+        <img src="img/LogoNoLetras.png" class="logoLoader"/>
+        <img src="img/loader.gif" class="loaderIcono"/>
+    </div>
     <div class="paginaPrincipal" id="main">
-        <div class="logoCabecera">
-            <img src="img/logoBlanco.png" class="logo" />
+        <div class="Cabecera">
+            <img src="img/logoBlanco.png" class="logo"/>
+            <img src="img/icono.png" class="icono"/>
             <div class="menuPrincipal">
                 <ul>
                     <li><a href="#location">Location</a></li>
@@ -23,21 +28,15 @@
         </div>
     </div>
     <div class="formularioReserva" id ="reservar">
-        <iframe src="formulario.html"  id="frameFormulario" scrolling="no"></iframe>
+        <link id="template-file" href="formulario.html" rel="import" /> 
     </div>
-    <div class="carta" id ="carta">
-        <br>
-        <iframe src="carta.html" id="frameCarta" frameborder="no" scrolling="no"  ></iframe>
-    </div>
-    <div class="contact-us">
-        <iframe src="About y contact.html" id="frameContact" frameborder="no" scrolling="no"></iframe>
-    </div>>
+    <div class="carta" id ="carta"></div>
+    <div class="AboutUs" id="AboutUs"></div>
+    <div class="location" id="location"></div>
     <div class="footer">
-        <img src="img/twitter.png" class="twitter"/>
-        <img src="img/instagram.png" class="instagram"/>
+        <img src="img/logoBlanco.png" class="logo"/>
         <p>Copyright © 2021 Fooders' Beef </p>
     </div>
-</div>
 </body>
-
+<script src="menu.js"></script>
 </html>
