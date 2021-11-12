@@ -1,133 +1,186 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body{
-    background: black;
-}
-.pincipal{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.menuPrincipal{
-    display: block;
-    float: right;
-    margin: 25px;
-}
-.logoCabecera .logo{
-    width: 200px;
-    height: 100px;
-    margin: 30px;
-    margin-left: 100px;
-}
-.logoCabecera{
-    transition: 500ms ease-out;
-    position: fixed;
-    width: 100%;
-}
-.logoCabecera:hover{
-    background: rgb(0, 0, 0, .9);
-    box-shadow: 0 0 70px 90px rgb(0, 0, 0, .9);
-}
-.menuPrincipal ul {
-    list-style:none;
-    background: none;
-    margin-right: 50px;
-    display: block;
-}
-.menuPrincipal ul a {
-    color:rgb(255, 255, 255);
-    background: none;
-    text-decoration:none;
-    font-weight:400;
-    font-size:20px;
-    padding:10px;
-    font-family: "Montserrat";
-	text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing:2px;
-    float: right;
-    margin: 15px;
-    border: none;
-    transition: 0.3s;
-    width: 200px;
-    text-align: center;
-}
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .hiddenFlow{
+        overflow: hidden;
+    }
+    #loaderContenedor.hidden{
+        display: none;
+    }
+    #loaderContenedor{
+        background-color: rgb(0,0,0);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #loaderContenedor .logoLoader{
+        width:  15%;
+        height: 20%;
+    }
+    #loaderContenedor .loaderIcono{
+        width:  20%;
+        height: 25%;
+    }
+
+    .paginaPrincipal {
+        width:100%;
+        max-width: 100%;
+        height: 1000px;
+        background-image: url("img/fondo.png");
+        background-color: transparent;
+        background-size: cover;
+        background-position: center center;
+        z-index: -2;
+    }
+    .Cabecera .logo{
+        width: 12%;
+        height: 80%;
+        margin-left: 5%;
+    }
+
+    .Cabecera{
+        transition: 500ms ease-out;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5%;
+        flex-wrap: wrap;
+        background: rgb(0, 0, 0, .7);
+        box-shadow: 0 0 10px 20px rgb(0, 0, 0, .7);
+    }
+    .menuPrincipal{
+        margin: auto;
+        width: 50%;
+    }
+    .menuPrincipal ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .menuPrincipal ul li{
+        display: inline-block;
+    }
+    .menuPrincipal ul li a{
+        display: block;
+        padding: 10px 20px;
+        color:rgb(255, 255, 255);
+        text-decoration:none;
+        font-size:18px;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: bolder;
+        float: right;
+        transition: 0.3s;
+    }
+    .menuPrincipal ul li a:hover {
+        color:#e7ac3f;
+        filter: saturate(2);
+        cursor: url("img/cursor.png"), auto;
+    }
+
+    .footer{
+        background: rgb(0, 0, 0);
+        width: 100%;
+        height: 30%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 3% 0;
+    }
+
+    .icono{
+        display: none;
+    }
+    .footer p{
+        color: rgb(255,255,255);
+        font-family: "Montserrat";
+        font-weight: bolder;
+        text-align: center;
+        margin: 0px;
+    }
+    .footer img{
+        width: 9%;
+        height: 30%;
+        opacity: 0.6;
+        margin-bottom: 1%;
+    }
 
 
-.menuPrincipal ul li {
-    position:block;
-    float:right;
-}
+@media screen and (max-width: 767px){
 
-.menuPrincipal ul li a:hover {
-    color:#e7ac3f;
-    font-size: 20px;
-    margin-top: 10px;
-    filter: saturate(2);
-    cursor: url("img/cursor.png"), auto;
-}
-
-.paginaPrincipal {
-    margin-left: -10px;
-    margin-top: -10px;
-    width:100.96%;
-    height: 1000px;
-    background-image: url("img/fondo.png");
-    background-color: transparent;
-    background-size: cover;
-}
-iframe{
-    width:100%;
-    height: 100%;
-}
-.footer{
-    background: rgb(0, 0, 0);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.footer p{
-    color: rgb(255,255,255);
-    text-align: center;
-    font-family: "Montserrat";
-    font-weight: bolder;
-    margin-top: 45px;
-    margin-right: 500px;
-}
-.twitter{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-right: 100px;
-}
-
-.instagram{
-    width: 50px;
-    height: 50px;
-    margin-left: 80px;
-    margin-top: 30px;
-}
-.formularioReserva{
-    height: 1000px;
-
-}
-#frameFormulario{
-    border: none;
-    background-size: cover;
-    background-position: center;
-}
-.carta{
-    height: 2000px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-#frameCarta{
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    background-size: cover;
-    background-position: center;
+    #loaderContenedor .loaderIcono{
+        width:  30%;
+        height: 15%;
+    }
+    #loaderContenedor .logoLoader{
+        width: 30%;
+        height: 15%;
+        padding: 2%;
+        margin-right: 0.7%;
+    }
+    .icono{
+        display: block;
+        margin-right: 8%;
+        width: 15%;
+        height: 60%;
+        padding: 0;
+    }
+    .Cabecera .logo{
+        width: 40%;
+        height: 100%;
+        margin-top:2%;
+        margin-left: 5%;
+    }
+    .menuPrincipal{
+        width: 100%;
+        margin-top: 2%;
+        right: 0;
+        word-wrap: break-word;
+    }
+    .menuPrincipal ul{
+        display: none;
+    }
+    .menuPrincipal ul.show{
+        display: block;
+    }
+    .menuPrincipal ul li{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menuPrincipal ul li a{
+        display: block;
+        padding: 10px 20px;
+        color:rgb(255, 255, 255);
+        text-decoration:none;
+        font-size:18px;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: bolder;
+        transition: 0.3s;
+    }
+    .menuPrincipal ul li a:hover {
+        color:#e7ac3f;
+        font-size: 18px;
+        filter: saturate(2);
+        cursor: url("img/cursor.png"), auto;
+    }
+    .footer p{
+        font-size: 6px;
+    }
 }
