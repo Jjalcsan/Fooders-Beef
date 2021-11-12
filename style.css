@@ -164,10 +164,23 @@
         height: 2000px;
         margin-left: auto;
         margin-right: auto;
-    
     }
 
 @media screen and (max-width: 767px){
+
+    .basic {
+        margin-left: 5%;
+        height: 100%;
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "e e"
+            "e e"
+            "e e"
+            "e e";     
+    }
 
     #loaderContenedor .loaderIcono{
         width:  30%;
