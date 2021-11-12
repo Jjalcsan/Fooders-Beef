@@ -18,7 +18,6 @@
             <img src="img/icono.png" class="icono"/>
             <div class="menuPrincipal">
                 <ul>
-                    <li><a href="#location">Location</a></li>
                     <li><a href="#AboutUs">About Us</a></li>
                     <li><a href="#carta">Menu</a></li>
                     <li><a href="#reservar">Reservations</a></li>
@@ -28,11 +27,14 @@
         </div>
     </div>
     <div class="formularioReserva" id ="reservar">
-        <link id="template-file" href="formulario.html" rel="import" /> 
+        <iframe src="formulario.html"  id="frameFormulario" scrolling="no"></iframe>
     </div>
-    <div class="carta" id ="carta"></div>
-    <div class="AboutUs" id="AboutUs"></div>
-    <div class="location" id="location"></div>
+    <div class="carta" id ="carta">
+    	<iframe src="carta.html" id="frameCarta" frameborder="no" scrolling="no"  ></iframe>
+    </div>
+    <div class="AboutUs" id="AboutUs">
+    	<iframe src="About y contact.html" id="frameContact" frameborder="no" scrolling="no"></iframe>
+    </div>
     <div class="footer">
         <img src="img/logoBlanco.png" class="logo"/>
         <p>Copyright © 2021 Fooders' Beef </p>
