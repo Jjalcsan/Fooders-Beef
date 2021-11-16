@@ -82,8 +82,7 @@
     }
     }
 
-    @media screen and (max-width: 767px){
-
+@media screen and (max-width: 767px){
     .basic {
         margin-left: 5%;
         height: 100%;
@@ -97,4 +96,6 @@
             "e e"
             "e e";     
     }
+
+    
 }
