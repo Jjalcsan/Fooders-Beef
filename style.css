@@ -150,6 +150,10 @@ iframe{
 .carta{
     height: 50em;
 }
+#galeria{
+    height: 60em;
+}
+
 
 #frameCarta{
     margin-left: auto;
@@ -168,6 +172,14 @@ iframe{
     .formularioReserva{
         height: 120vh;
     }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1030px){
+    #galeria{
+        height: 120em;
+    }
+   
 }
 
 
@@ -190,6 +202,9 @@ iframe{
      }
      .formularioReserva{
         height: 140vh;
+    }
+    #galeria{
+        height: 90em;
     }
 
     #loaderContenedor .loaderIcono{
