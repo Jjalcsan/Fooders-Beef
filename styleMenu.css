@@ -4,14 +4,15 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat";
   }
 
-  .background{
-    background-image: url(fondo.jpg);
-    background-size: cover;
-    padding: 206px;
-    
+  body{
+    background-image: url(img/fondomenu.jpg);
+    height: 100vh;
+    background-color: transparent;
+    background-size: cover;  
+    background-position: center center;
   }
   .cards{
     width:100%;
@@ -21,11 +22,6 @@
     align-items: center;
     margin: auto;
   }
-  
-  .cards .new-producto{
-    width: 100%;
-    margin-top: 20px;
-  }
 
   .titulo{
     font-family: "Montserrat";
@@ -33,6 +29,7 @@
     font-size: 40px;
     color: rgb(230, 230, 230);
     text-shadow: 4px 4px 20px rgb(165, 165, 165);
+    padding-top: 5em;
   }
   
   .card{
@@ -62,32 +59,3 @@
     width: 100%;
     height: auto;
   }
-
-  .cantidad{
-    margin-top: 5px;
-    margin-bottom: 15px;
-    max-width:50px ;
-    text-align: center;
-  }
-
-  .boton{
-    color: #ffffff;
-    display: block;
-    background-color: #4a4d49;
-    max-width: 140px;
-    padding: 12px 25px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 2px;
-    outline: 0;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
-    transition: all .2s; 
-    margin: auto;  
-  }
-  
-  .boton:hover, .boton:active, .boton:focus {
-    -ms-transform: scale(1.1);
-        transform: scale(1.1); 
-   }
