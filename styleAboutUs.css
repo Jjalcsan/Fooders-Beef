@@ -1,0 +1,517 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@media screen and (min-width:700px) {
+
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+    background-color: rgb(0,0,0,.9);
+    color: white;
+}
+
+/*CSS de imagen de contacto*/
+
+#contact-us{
+    height: 60%;
+    text-align: center;
+    color: white;
+}
+
+#div-de-miembro{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.div-de-un-miembro{
+    padding-top: 7%;
+    height: 20%;
+}
+
+#titulo-contacto{
+    padding-top: 3%;
+    color: white;
+}
+
+.foto-miembro{
+    border-radius: 50%;
+    border-style: solid;
+    background-color:white
+}
+
+.nombre{
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/*CSS de envio de mensajes*/
+
+#send-message{
+    transition: 2ms;
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+}
+
+#enviar-mensaje{
+    margin-bottom: 2%;
+}
+
+.input{
+    border-radius: 15px;
+    border-style: solid;
+    height: 5%;
+    width: 42%;
+    padding-left: 1%;
+    margin-bottom: 1%;
+}
+
+.input-textarea{
+    border-radius: 15px;
+    border-style: solid;
+    padding-left: 1%;
+    padding-top: 1%;
+    border-width: 1%;
+}
+
+.input-button{
+    border-radius: 15px;
+    width: 7%;
+    height: 4%;
+    border-style: solid;
+    margin-top: 3%;
+    background-color: white;
+}
+
+.barra{
+    color: white;
+}
+
+/*CSS de email-phone-address*/
+
+#address-email-phone{
+    color: white;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#address-email-phone div{
+    width: 33%;
+}
+
+#adress,#phone,#email{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.div-imagen{
+    width: 30%;
+    text-align: right;
+    align-items: center;
+}
+
+.div-info{
+    width: 70%;
+}
+
+.imagen{
+    margin-right: 20px;
+}
+
+/*CSS de location*/
+
+/*CSS de parte de abajo*/
+
+#footer-like{
+    color: white;
+    height: 45%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#footer-like div{
+	flex: 1;
+	margin: 1%;
+	padding: 1%;
+}
+
+.enlaces{
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: .5%;
+}
+
+.enlaces:hover{
+    border-color: #e7ac3f;
+    transition:all .2s ease-in-out;
+}
+
+/*CSS de parte de post*/
+.div-de-post{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+/*CSS de parte de post*/
+.div-de-foto img{
+    border-radius: 30%;
+}
+
+.div-de-contenido{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#schedule-table{
+    color: white;
+}
+
+.day-td{
+    width: 50%;
+}
+
+.schedule-td{
+    text-align: right;
+    padding-top: 3%;
+}
+}
+@media screen and (min-device-width: 11px) and (max-device-width: 411px) {
+
+    #contact-us{
+        height: 80%;
+        text-align: center;
+    }
+    
+    #div-de-miembro{
+        display: grid;
+    }
+
+    .div-de-un-miembro{
+        padding-top: 7%;
+    }
+
+    .nombre{
+        font-size: 30px;
+    }
+
+    #titulo-contacto{
+        font-size: 70px;
+    }
+
+    #send-message{
+        height: 75%;
+    }
+
+    #enviar-mensaje{
+        font-size: 70px;
+    }
+
+    #informanos{
+        font-size: 35px;
+    }
+
+
+    #contenido-mensaje{
+        display: grid;
+    }
+
+    .input{
+        height: 8%;
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .input-textarea{
+        font-size: 25px;
+        width: 70%;
+    }
+
+    #boton-comentario{
+        width: 20%;
+        height: 10%;
+        font-size: 30px;
+    }
+
+    #address-email-phone{
+        display: grid;
+        height: 50%;
+        align-content: center;
+    }
+
+    #adress, #phone, #email{
+        padding-left: 32%;
+        font-size: 20px;
+    }
+
+    .imagen{
+        width: 60%;
+    }
+
+    #footer-like{
+        display: grid;
+        height: 90%;
+        align-content: center;
+        justify-items: center;
+    }
+
+    #our-location, #posts, #opening-times{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .div-de-post{
+        width: 50%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .div-de-foto{
+        width: 30%;
+    }
+
+    #schedule-table{
+        font-size: 20px;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    #opening-times{
+        width: 100%;
+    }
+
+    .day-td, .schedule-td{
+        font-size: 30px;
+    }
+
+}
+@media screen and (min-device-width: 412px) and (max-device-width: 549px) {
+
+    #contact-us{
+        height: 100%;
+        text-align: center;
+        color: black;
+    }
+    
+    #div-de-miembro{
+        display: grid;
+    }
+
+    .div-de-un-miembro{
+        padding-top: 7%;
+    }
+
+    .nombre{
+        font-size: 30px;
+    }
+
+    #titulo-contacto{
+        font-size: 70px;
+    }
+
+    #send-message{
+        height: 100%;
+    }
+
+    #enviar-mensaje{
+        font-size: 70px;
+    }
+
+    #informanos{
+        font-size: 35px;
+    }
+
+
+    #contenido-mensaje{
+        display: grid;
+    }
+
+    .input{
+        height: 8%;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .input-textarea{
+        font-size: 25px;
+        width: 70%;
+    }
+
+    #boton-comentario{
+        width: 20%;
+        height: 10%;
+        font-size: 30px;
+    }
+
+    #address-email-phone{
+        display: grid;
+        height: 70%;
+        align-content: center;
+    }
+
+    #adress, #phone, #email{
+        padding-left: 32%;
+        font-size: 20px;
+    }
+
+    .imagen{
+        width: 60%;
+    }
+
+    #footer-like{
+        display: grid;
+        height: 120%;
+        align-content: center;
+        justify-items: center;
+    }
+
+    #our-location, #posts, #opening-times{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .div-de-post{
+        width: 50%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .div-de-foto{
+        width: 30%;
+    }
+
+    #schedule-table{
+        font-size: 20px;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    #opening-times{
+        width: 100%;
+    }
+
+    .day-td, .schedule-td{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-device-width: 550px) and (max-device-width: 699px) {
+
+    #contact-us{
+        height: 130%;
+        text-align: center;
+        color: black;
+    }
+    
+    #div-de-miembro{
+        display: grid;
+    }
+
+    .div-de-un-miembro{
+        padding-top: 7%;
+    }
+
+    .nombre{
+        font-size: 30px;
+    }
+
+    #titulo-contacto{
+        font-size: 70px;
+    }
+
+    #send-message{
+        height: 120%;
+    }
+
+    #enviar-mensaje{
+        font-size: 70px;
+    }
+
+    #informanos{
+        font-size: 35px;
+    }
+
+
+    #contenido-mensaje{
+        display: grid;
+    }
+
+    .input{
+        height: 8%;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .input-textarea{
+        font-size: 25px;
+        width: 70%;
+    }
+
+    #boton-comentario{
+        width: 20%;
+        height: 10%;
+        font-size: 30px;
+    }
+
+    #address-email-phone{
+        display: grid;
+        height: 80%;
+        align-content: center;
+    }
+
+    #adress, #phone, #email{
+        padding-left: 32%;
+        font-size: 20px;
+    }
+
+    .imagen{
+        width: 60%;
+    }
+
+    #footer-like{
+        display: grid;
+        height: 150%;
+        align-content: center;
+        justify-items: center;
+    }
+
+    #our-location, #posts, #opening-times{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .div-de-post{
+        width: 50%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .div-de-foto{
+        width: 30%;
+    }
+
+    #schedule-table{
+        font-size: 20px;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    #opening-times{
+        width: 100%;
+    }
+
+    .day-td, .schedule-td{
+        font-size: 30px;
+    }
+
+}
